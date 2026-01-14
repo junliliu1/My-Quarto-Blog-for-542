@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "My Tech Blog"
+  description: "Data Science & Programming Learning Notes"
+  site-url: "https://junliliu1.github.io/My-Quarto-Blog-for-542"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: rss
+        href: index.xml
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+
+
+

@@ -1,0 +1,187 @@
+---
+title: "DSCI 542 Lab 2"
+subtitle: "Creating a Blog Post for Your Audience"
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+---
+
+## Lab Assignment Instructions
+
+In this course, we are using a labor-based grading approach. This means that each task in the lab is graded based on completion rather than evaluation of quality. If a question is completed according to the specifications provided such as meeting the word limit, following the required format, or staying within the allotted time you will receive full credit for that question.
+
+When submitting your lab, please be sure to:
+
+-   Include a link to your GitHub repository containing your work as well as a link to your published blog post.
+
+-   Github link:<https://github.ubc.ca/mds-2025-26/DSCI_542_lab2_junli613>
+
+-   blog link:
+
+-   Submit a the `.qmd` file along with a rendered version (either `.html` or `.pdf`) of your lab to Gradescope.
+
+-   On Canvas, submit a link to your blog post for peer review.
+
+## Question 1: Understand your audience
+
+rubric={completion:5}
+
+In this lab, you will be tasked to writing a data science blog based on the topic you chose in lab 1.
+
+As mentioned in Lecture 2, an audience persona is a brief written description of a specific person in your target audience, who might be real or imagined. It should include the following information about the person:
+
+-   Their **experience**. How much experience do they have with your subject, and of what kind?
+-   Their **motivation**. Why do they want to learn about this subject? If they have any specific goals, what are they?
+
+For example, here are three personas for potential audiences of an explanation of quantum computing:
+
+-   Mike is a third-grade student. He has fairly little experience with any computers at all, let alone quantum computers. But he suspects that computers might be able to help his with tough homework problems, and wants to know if this is true of quantum computers.
+-   Nadine is a fifteen-year-old high school student. She is familiar with computers; most commonly she uses her iPhone to socialize, study, and take photoes. She has never heard of quantum computers before, but likes to impress her friends with cool facts about things she learns.
+-   Alex is an undergraduate computer science student interested in machine learning and artificial intelligence. They taken courses in chemistry and physics, and knows the basics of how quantum computing differs from classical computing. They are curious about the kinds of problems that quantum computing could be used to solve, and how soon the technology might become commercially available.
+
+Write an audience persona for the target reader of your blog that is **3-5 sentences long**. Additionally, propose a **minimum of 3 different titles** for your blog. During the lab, we encourage you to exchange the audience persona, the titles, and the abstract with your peers and get their initial feedback.
+
+### Answer:
+
+**Audience Persona:**
+
+Sarah is a junior product manager at a growing e-commerce startup with basic understanding of data science concepts from her MBA coursework. She knows that personalized recommendations drive customer engagement but has limited technical knowledge about how recommendation systems work. Sarah wants to understand common challenges in building recommendation systems so she can better communicate with her data science team and make informed decisions about feature prioritization. She is particularly interested in practical solutions that balance technical complexity with business impact. Her goal is to grasp enough technical depth to ask the right questions during product planning meetings without needing to understand the mathematical details.
+
+**Proposed Blog Titles:**
+
+1.  Solving the Cold Start Problem: How Netflix and Spotify Recommend Content to New Users
+2.  The Chicken-and-Egg Challenge: Building Recommendation Systems Without User Data
+3.  From Zero to Personalized: Tackling the Cold Start Problem in Recommendation Systems
+
+## Question 2: Write a data science blog
+
+rubric={completion: 30}
+
+### Guideline to get started
+
+I highly recommend you check out this [guideline](https://towardsdatascience.com/questions-96667b06af5#1d11) from TowardsDataScience.com, a well-known publisher for data science blogs.
+
+### Types of blog post in data science
+
+There are many different types of blog posts that can be written in the field of data science. Some common types of blog posts include:
+
+-   **Tutorials**: These posts provide step-by-step instructions or guidance on how to perform a specific task in data science, such as using a machine learning algorithm or creating a data visualization using a specific package/language.
+-   **Explanations**: These posts aim to explain complex concepts or techniques in data science in a way that is easy for a general audience to understand. They might include examples or case studies to illustrate the concept or technique.
+-   **News and analysis**: These posts discuss recent news or research in the field of data science, and provide analysis or commentary on the implications or significance of the news or research.
+-   **Personal experiences**: These posts share the experiences of a data scientist or student learning data science, and might include stories about challenges and successes, as well as tips and advice for others interested in pursuing a career in data science.
+-   **Comparisons and contrasts**: These posts compare and contrast different tools, approaches, or concepts in data science, and might include pros and cons or recommendations for when to use each option.
+
+Overall, there are many different types of blog posts that can be written in data science, and the type of post will depend on the goals and audience of the blog.
+
+For your inspiration, this is a blog post that Nico Van den Hooff, a MDS alumni, wrote last year\
+[Exploring the Most Popular Machine Learning and Deep Learning GitHub Repositories](https://medium.com/towards-data-science/exploring-the-most-popular-machine-learning-and-deep-learning-github-repositories-90b9ecf12be7)
+
+### Length
+
+For this assignment, we suggest aiming for a word count of around 1200 (+ or - 300) words, not including code, captions, references, etc. Please consider the amount of time it will take your audience to read your post and keep this in mind as you plan and write your content. We recommend creating a brief outline for the blog first before diving in.
+
+### How to write your blog
+
+In this question, you are asked to write your blog using Quarto.
+
+Step 1: Login to Github
+
+Step 2: Create your [Quarto Blog](https://quarto.org/docs/websites/website-blog.html).
+
+Step 3: Start writing and finish! Push/publish your changes, and .
+
+Step 4: Submit the blog's outline as well as **a link to your blog**. Your blog can be published either via [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html) or [GitHub Pages](https://docs.github.com/en/pages).
+
+Your blog will be evaluated for completion based on the word count as well as the link to your blog functioning as expected.
+
+### Some prompts to get you started (Optional)
+
+-   What is the main topic or concept you want to write about in your blog post? What makes it interesting or important to your audience?
+-   What type of data science blog do you want to write? (see different types above)
+-   What are the key points or ideas you want to include in your blog post? How can you organize these points to create a clear and coherent structure for your post?
+-   How can you use examples or case studies to illustrate the concepts or techniques you are discussing in your blog post? What are some real-world applications of the topic you are writing about?
+-   How can you make your blog post engaging and interactive for your audience? What types of media or interactive elements can you include to make your post more interesting and interactive?
+-   How can you conclude your blog post in a way that leaves a lasting impression on your readers? What are the main takeaways you want your readers to remember after reading your post?
+
+### Answer:
+
+# Solving the Cold Start Problem: How Netflix and Spotify Recommend Content to New Users
+
+## Introduction
+
+Picture this: you just signed up for a new music streaming service. Within seconds of creating your account, the app presents you with a personalized playlist. How does it know what songs you might like when you have not played a single track yet? This seemingly simple question points to one of the most challenging problems in modern recommendation systems: the cold start problem.
+
+Recommendation systems power many of the digital experiences we take for granted. Netflix suggests what to watch next, Spotify curates your weekly discovery playlist, Amazon knows which products might interest you, and LinkedIn recommends professional connections. These systems rely on understanding user preferences through historical data. But what happens when there is no history to learn from? This is the essence of the cold start problem.
+
+## What is the Cold Start Problem?
+
+Answer: The cold start problem occurs when a recommendation system lacks sufficient information to make accurate predictions, typically affecting new users who have no interaction history or new items that have not been rated or consumed.
+
+The term "cold start" comes from the idea that the system needs to "warm up" by collecting data before it can function effectively. This problem manifests in three primary scenarios. First, when new users join a platform, the system has no information about their preferences, behaviors, or interests. Second, when new items are added to the catalog, there are no ratings, reviews, or interaction data to indicate which users might find them relevant. Third, in completely new systems, there is neither user data nor item data to establish patterns.
+
+The challenge creates a paradox: recommendation systems need data to make good recommendations, but they need to make good recommendations to encourage users to provide data through their interactions. If a new user receives poor initial recommendations, they may abandon the platform before the system has a chance to learn their preferences. Research shows that user engagement drops significantly when initial recommendations are irrelevant, making this problem critical for business success.
+
+## Why Does This Matter?
+
+The cold start problem has real business implications. Studies indicate that users who receive poor recommendations in their first session are 60% more likely to churn within the first week. For companies like Netflix, where content recommendations drive over 80% of viewing activity, solving the cold start problem directly impacts user retention and revenue.
+
+Beyond business metrics, the cold start problem affects user experience. When you open a new app and immediately see content that resonates with your interests, you feel understood. This positive first impression builds trust and engagement. Conversely, irrelevant recommendations create friction and frustration, damaging the relationship between user and platform before it even begins.
+
+## Traditional Approaches to the Cold Start Problem
+
+Answer: Traditional solutions to the cold start problem include content-based filtering, which recommends items similar to what users have liked based on item features, and demographic filtering, which groups users by characteristics like age or location to provide initial recommendations.
+
+Companies have developed several strategies to address cold start challenges. Content-based filtering analyzes the attributes of items themselves rather than relying on user interactions. For example, if you are a new Netflix user who just watched a science fiction thriller, the system can recommend other movies with similar genres, directors, or actors without needing to know your broader viewing history. This approach works because it leverages item metadata rather than user behavior patterns.
+
+Demographic filtering takes a different approach by grouping users based on characteristics like age, gender, location, or profession. The assumption is that people with similar demographics often share similar preferences. While this method provides a starting point, it can reinforce stereotypes and miss individual variation within demographic groups.
+
+Many platforms use explicit preference elicitation, asking new users direct questions about their interests. Spotify asks you to select favorite artists during signup. Netflix shows you a grid of shows and movies to rate. These onboarding flows serve a dual purpose: they gather initial preference data while making users feel that the system is trying to understand them. The challenge lies in balancing data collection with user patience; asking too many questions during signup increases abandonment rates.
+
+## Modern Solutions: Hybrid and Advanced Techniques
+
+Leading platforms have moved beyond simple solutions to sophisticated hybrid approaches that combine multiple strategies. These systems intelligently switch between different recommendation methods based on available data.
+
+Answer: Hybrid recommendation systems combine multiple approaches such as collaborative filtering, content-based filtering, and contextual information to provide robust recommendations even with limited data. They adapt their strategy based on how much information is available about each user and item.
+
+Transfer learning has emerged as a powerful technique for cold start scenarios. This approach leverages knowledge gained from one domain or platform to make predictions in another. For instance, Spotify might use your listening patterns from YouTube Music if you import your data, or it might apply general patterns learned from millions of users to make educated guesses about your preferences based on minimal information.
+
+Context-aware recommendations incorporate situational factors beyond user history. The time of day, day of week, current location, device type, and even weather can provide valuable signals. A user opening a music app at 6 AM on a weekday is likely looking for different content than the same user at 11 PM on a Saturday. By leveraging contextual information, systems can make reasonably accurate predictions even for new users.
+
+Social network analysis offers another avenue for addressing cold start problems. When you sign up for a service using your Facebook or Twitter account, the platform can analyze your social connections. If your friends predominantly enjoy certain types of content, there is a reasonable probability you might enjoy similar content. LinkedIn uses this approach extensively, recommending connections based on mutual connections and shared professional backgrounds.
+
+## Real-World Examples
+
+Netflix employs a multi-faceted strategy to handle new users. During signup, the platform presents a carefully curated selection of popular titles across different genres and asks you to rate a few. This interactive onboarding immediately provides preference signals. For items you do not rate, Netflix uses a combination of content features and popularity metrics to fill your initial recommendations. The system also employs item-item similarity; if you rate one superhero movie highly, it will recommend others with similar characteristics.
+
+Spotify takes a slightly different approach by focusing on musical attributes. Their Music Genome Project analyzes songs across dozens of features including tempo, energy, danceability, and mood. When you select favorite artists during signup, Spotify maps those artists in a multi-dimensional feature space and recommends songs that are "nearby" in that space. This content-based approach provides reasonable initial recommendations while the system begins collecting interaction data.
+
+Amazon addresses cold start through browsing behavior. Even before you make a purchase or create an account, Amazon tracks which products you view, how long you spend on each page, and which items you add to your cart. This behavioral data, combined with product category information and general popularity trends, allows Amazon to make initial recommendations. Once you make a purchase, the system rapidly refines its understanding through collaborative filtering with users who bought similar items.
+
+## The Path Forward
+
+While significant progress has been made, the cold start problem remains an active area of research. Emerging techniques include few-shot learning, where systems learn to make accurate predictions from minimal examples, and meta-learning approaches that learn how to learn quickly from new users.
+
+Privacy-preserving techniques are becoming increasingly important as users demand more control over their data. Federated learning allows recommendation systems to learn from user behavior without centralizing personal data, potentially offering a solution to cold start problems that respects user privacy.
+
+The cold start problem illustrates a fundamental challenge in artificial intelligence: making intelligent decisions with limited information. As recommendation systems become more sophisticated and ubiquitous, solving this problem becomes not just a technical challenge but a crucial factor in creating positive user experiences that respect individual preferences while protecting privacy.
+
+## Conclusion
+
+The cold start problem represents the challenging intersection of data scarcity and user expectation. Modern platforms have developed increasingly sophisticated solutions that combine multiple approaches, from simple demographic filtering to advanced machine learning techniques. The next time you open a new app and receive surprisingly relevant recommendations, you are witnessing the culmination of years of research and engineering effort dedicated to solving this fundamental challenge in recommendation systems.
+
+## Peer Feedback (to be completed next week)
+
+After the submission deadline, you will get randomly assigned 2 blogs from your classmates to review.
+
+Peer review allows you to receive feedback on your writing from multiple peers, which help you see your work more objectively and identify areas where they can revise and improve their writing. It also fosters a sense of community and a safe environment to collaborate and help each other with constructive feedback.
+
+Read the blog posts carefully, paying attention to the content, organization, and style of the writing. Consider the following questions as you review:
+
+-   Is the content of the blog post accurate and well-researched?
+-   Is the structure of the blog post clear and logical?
+-   Are the ideas in the blog post effectively communicated and easy to understand?
+-   Is the writing style of the blog post engaging and appropriate for the audience?
+
+Write a review for each of the blog posts, addressing the above questions and any other issues you feel are relevant. Use specific examples from the posts to support your points.
