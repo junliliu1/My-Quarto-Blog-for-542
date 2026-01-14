@@ -31,6 +31,7 @@ jobs:
 
       - name: Render Quarto Project
         run: |
+          cd blog
           quarto render
 
       - name: Upload artifact
